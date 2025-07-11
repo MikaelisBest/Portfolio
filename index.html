@@ -2,33 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Rock Paper Scissors</title>
+  <title>Mikael Fazal – Developer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <main class="container">
-    <h1>Rock Paper Scissors</h1>
-    <p class="subtitle">Make your move below.</p>
-
-    <div class="buttons">
-      <button onclick="play('rock')">Rock</button>
-      <button onclick="play('paper')">Paper</button>
-      <button onclick="play('scissors')">Scissors</button>
+  <header>
+    <div class="wrapper">
+      <h1>Mikael Fazal</h1>
+      <p>Front-End Web Developer</p>
     </div>
+  </header>
 
-    <div class="result-area">
-      <p id="user-choice"></p>
-      <p id="computer-choice"></p>
-      <p id="result"></p>
-    </div>
+  <div class="wrapper" style="text-align: right;">
+  <button id="theme-toggle">Toggle Dark Mode</button>
+</div>
+
+  <main class="wrapper">
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a self-driven front-end developer with a strong focus on creating responsive and accessible web interfaces. 
+        I enjoy working with clean code, structured layouts, and thoughtful user experience design.
+      </p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Rock Paper Scissors</h3>
+        <p>A basic interactive game built with HTML, CSS, and JavaScript.</p>
+        <a href="projects/rockpaperscissors/index.html" target="_blank">Open Project</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/xkgbdpdb" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="_replyto" id="email" required />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Mikael Fazal</p>
+    <div class="wrapper">
+      <p>&copy; 2025 Mikael Fazal</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/theme.js"></script>
 </body>
 </html>
